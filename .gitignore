@@ -1,0 +1,13 @@
+[Oo]bj/
+[Bb]in/
+*.suo
+*.csproj.user
+packages/*
+App_Data/
+msbuild.log
+nuget.exe
+artifacts/*
+.vs
+Web.*.config
+bhp/ng/**/*.js
+bhp/ng/**/*.js.map
