@@ -3,11 +3,12 @@
 *.suo
 *.csproj.user
 packages/*
+node_modules
 App_Data/
 msbuild.log
 nuget.exe
 artifacts/*
 .vs
 Web.*.config
-bhp/ng/**/*.js
-bhp/ng/**/*.js.map
+angular2-webapi/app/**/*.js
+angular2-webapi/app/**/*.js.map
