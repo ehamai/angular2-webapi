@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Routing;
 
 namespace angular2_webapi
 {
@@ -13,12 +14,7 @@ namespace angular2_webapi
 
             // Web API routes
             config.MapHttpAttributeRoutes();
-
-            config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
+            config.Routes.MapHttpRoute("get-message", "api/message", new { controller = "Message", action = "GetMessage" }, new { verb = new HttpMethodConstraint("GET") });
         }
     }
 }
